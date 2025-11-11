@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import Profile from '@/components/Profile'
+import Projects from '@/components/Projects'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -11,7 +12,7 @@ function RouteComponent() {
   <div className=''>
     <Hero/>
     <Profile/>
-    <h1>Projects</h1>
+    <Projects/>
     <h1>Skills</h1>
     <h1>Contact</h1>
   </div>

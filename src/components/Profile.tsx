@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Profile = () => {
   return (
-    <section className="relative" style={{"background": "radial-gradient(ellipse at top, #ffffff, #ffffff, rgba(241, 241, 28, 0.21))"}}>
+    <section className="relative" style={{"background": "radial-gradient(ellipse at top, #ffffff 0%, #ffffff 40%, rgba(241, 241, 28, 0.2)) 70%"}}>
       <img src={tiles} className="w-full" />
       <div className="flex flex-row items-center gap-12">
         <img src={me} className="-mt-24 ml-12" />
