@@ -4,13 +4,13 @@ import { Button } from "./ui/button";
 
 const Profile = () => {
   return (
-    <div className="relative">
+    <section className="relative" style={{"background": "radial-gradient(ellipse at top, #ffffff, #ffffff, rgba(241, 241, 28, 0.21))"}}>
       <img src={tiles} className="w-full" />
       <div className="flex flex-row items-center gap-12">
         <img src={me} className="-mt-24 ml-12" />
-        <div>
-          <h1 className="text-5xl">Deswandy Wong</h1>
-          <h1 className="text-7xl">Fullstack Developer</h1>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-4xl font-serif font-medium">Deswandy Wong</h1>
+          <h1 className="text-7xl font-serif font-semibold">Fullstack Developer</h1>
           <h2 className="text-3xl">
             Your problem, my recipe. My solution, yours to enjoy.
           </h2>
@@ -18,15 +18,15 @@ const Profile = () => {
             I’m a computer engineering undergraduate in Multimedia Nusantara
             University, passionate in IoTs, UI/UX, fullstack web development,
             Networking (both social and engineering) and creating solutions for
-            real problems that are fun and impactful.
+            <b> real problems</b> that are fun and impactful.
           </p>
           <div className="flex flex-row gap-2">
-            <Button>View Projects</Button>
+            <Button className="">View Projects</Button>
             <Button variant="secondary">Look at my CV!</Button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
