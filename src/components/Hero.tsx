@@ -1,11 +1,16 @@
-import roof from "@/assets/images/roof.png"
+import roof from "@/assets/images/roof2.png";
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] bg-accent-foreground border-b-8 border-l-8 border-r-8 border-accent">
-      <img className="w-full absolute left-0 bg-cover h-52" src={roof}/>
-    </div>
-  )
-}
+    <section className="relative w-full overflow-x-clip">
+      <img
+        src={roof}
+        className="absolute -left-8 w-[200vw] sm:w-[120vw] max-w-none z-20"
+      />
 
-export default Hero
+      <div className="h-[80vh] bg-accent-foreground border-4 sm:border-8 border-accent"></div>
+    </section>
+  );
+};
+
+export default Hero;
