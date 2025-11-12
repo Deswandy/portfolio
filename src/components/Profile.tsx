@@ -1,6 +1,7 @@
 import tiles from "@/assets/images/landing-tiles3.png";
 import me from "@/assets/images/me.png";
 import { Button } from "./ui/button";
+import { ArrowDown, PaperclipIcon } from "lucide-react";
 
 const Profile = () => {
   return (
@@ -21,8 +22,8 @@ const Profile = () => {
             <b> real problems</b> that are fun and impactful.
           </p>
           <div className="flex flex-row gap-2">
-            <Button className="">View Projects</Button>
-            <Button variant="secondary">Look at my CV!</Button>
+            <Button className=""><ArrowDown/>View Projects</Button>
+            <Button variant="secondary"><PaperclipIcon/> Look at my CV!</Button>
           </div>
         </div>
       </div>

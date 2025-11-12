@@ -1,5 +1,9 @@
 import tiles from "@/assets/images/half-tiles.png";
 import swork from "@/assets/images/swork-dish.png"
+import Lensz from "./projects/Lensz";
+import Maxima from "./projects/Maxima";
+import Frugalwatt from "./projects/Frugalwatt";
+
 
 const Projects = () => {
   return (
@@ -14,6 +18,11 @@ const Projects = () => {
           </div>
         </div>
         <img src={tiles} className="w-[30%]" />
+      </div>
+      <div>
+        <Lensz/>
+        <Maxima/>
+        <Frugalwatt/>
       </div>
     </section>
   );
