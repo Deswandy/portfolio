@@ -2,7 +2,6 @@ import tiles from "@/assets/images/landing-tiles3.png";
 import me from "@/assets/images/me.png";
 import { Button } from "./ui/button";
 import { ArrowDown, PaperclipIcon } from "lucide-react";
-import { Link } from "@tanstack/react-router";
 
 const Profile = () => {
   return (
