@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
 import Profile from '@/components/Profile'
 import Projects from '@/components/Projects'
@@ -15,7 +16,7 @@ function RouteComponent() {
     <Profile/>
     <Projects/>
     <Skills/>
-    <h1>Contact</h1>
+    <Contact/>
   </div>
   )
 }

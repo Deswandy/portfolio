@@ -177,20 +177,20 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e0e0e0;
+  background: #bbc863;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9c9c9c;
+  background: #31694e;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7e7e7e;
+  background: #143123;
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #9c9c9c #e0e0e0;
+  scrollbar-color: #31694e #bbc863;
 }

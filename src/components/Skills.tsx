@@ -13,10 +13,10 @@ const Skills = () => {
         </div>
       </div>
       <div className="grid grid-cols-4 grid-rows-5 gap-4 h-[80vh] px-12">
-        <div className="col-span-3 row-span-2 bg-primary rounded-2xl">1</div>
-        <div className="col-span-2 row-span-2 col-start-4 bg-secondary rounded-2xl">4</div>
-        <div className="col-span-2 row-span-2 row-start-3 bg-primary rounded-2xl">5</div>
-        <div className="col-span-3 row-span-2 col-start-3 row-start-3 bg-secondary rounded-2xl">6</div>
+        <div className="col-span-3 row-span-2 bg-secondary rounded-2xl"></div>
+        <div className="col-span-2 row-span-2 col-start-4 bg-primary rounded-2xl"></div>
+        <div className="col-span-2 row-span-2 row-start-3 bg-primary rounded-2xl"></div>
+        <div className="col-span-3 row-span-2 col-start-3 row-start-3 bg-secondary rounded-2xl"></div>
       </div>
     </section>
   );
