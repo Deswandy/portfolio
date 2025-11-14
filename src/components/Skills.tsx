@@ -12,11 +12,19 @@ const Skills = () => {
           <h1 className="text-2xl font-light ">Skillset over the years</h1>
         </div>
       </div>
-      <div className="grid grid-cols-4 grid-rows-5 gap-4 h-[80vh] px-12">
-        <div className="col-span-3 row-span-2 bg-secondary rounded-2xl"></div>
-        <div className="col-span-2 row-span-2 col-start-4 bg-primary rounded-2xl"></div>
-        <div className="col-span-2 row-span-2 row-start-3 bg-primary rounded-2xl"></div>
-        <div className="col-span-3 row-span-2 col-start-3 row-start-3 bg-secondary rounded-2xl"></div>
+      <div className="grid grid-cols-5 grid-rows-4 gap-4 h-[80vh] px-12">
+        <div className="col-span-3 row-span-2 bg-secondary rounded-2xl">
+          Frontend
+        </div>
+        <div className="col-span-2 row-span-2 col-start-4 bg-primary rounded-2xl">
+          Backend
+        </div>
+        <div className="col-span-2 row-span-2 row-start-3 bg-primary rounded-2xl">
+          DevOps
+        </div>
+        <div className="col-span-3 row-span-2 col-start-3 row-start-3 bg-secondary rounded-2xl">
+          IoT
+        </div>  
       </div>
     </section>
   );

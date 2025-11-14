@@ -14,8 +14,8 @@ const Profile = () => {
       }}
     >
       <img src={tiles} className="w-full" />
-      <div className="flex flex-row items-center gap-12">
-        <img src={me} className="-mt-24 ml-12" />
+      <div className="flex flex-col md:flex-row items-center gap-12 w-full">
+        <img src={me} className="-mt-6 md:-mt-24 md:ml-12 w-1/2" />
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-serif font-medium">Deswandy Wong</h1>
           <h1 className="text-7xl font-serif font-semibold">
