@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const Frugalwatt = () => {
   return (
     <div className="flex flex-row items-center">
-      <div className="flex flex-col mx-10 p-20 gap-2">
+      <div className="flex flex-col mx-10 p-20 pr-0 mr-0 gap-2">
         <a href="https://labubuntu.vercel.app" target="_blank">
           <h1 className="text-5xl font-sans font-bold text-accent hover:text-green-900 transition-all">
             FrugalWatt
@@ -18,9 +18,9 @@ const Frugalwatt = () => {
           know how to count watts but know how to count money. It was a
           hackathon!
         </p>
-        <Button className="w-fit mt-2">View Detail</Button>
+        <Button variant="secondary" className="w-fit mt-2">View Detail</Button>
       </div>
-      <img src={frugalwattImage} />
+      <img src={frugalwattImage} className="w-[40%]"/>
     </div>
   );
 };

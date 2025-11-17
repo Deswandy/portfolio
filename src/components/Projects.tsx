@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
         <img src={tiles} className="w-[30%] h-full" />
       </div>
-      <div>
+      <div className="py-10">
         <Lensz/>
         <Maxima/>
         <Frugalwatt/>
