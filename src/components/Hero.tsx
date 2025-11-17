@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="flex flex-row gap-18 items-center justify-center h-[84vh] bg-accent-foreground border-4 sm:border-8 border-accent">
         <div className="flex flex-col gap-2 mt-10 w-1/2">
-          <h1 className="text-8xl text-wrap w-full font-black text-accent">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-wrap w-full font-black text-accent">
             The Fullstack RESTaurant
           </h1>
           <h1 className="text-3xl text-wrap w-full font-medium text-accent">
