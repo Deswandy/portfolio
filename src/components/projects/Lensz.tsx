@@ -83,11 +83,11 @@ const Lensz = () => {
             <div>
               <h3 className="font-semibold text-lg">GitHub Repository</h3>
               <a
-                href="https://github.com/YOUR_REPO_HERE"
+                href="https://github.com/Petinggi-Teknik-Indonesia"
                 target="_blank"
                 className="text-blue-600 underline"
               >
-                github.com/YOUR_REPO_HERE
+                github.com/Petinggi-Teknik-Indonesia
               </a>
             </div>
 

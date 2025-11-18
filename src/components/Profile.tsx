@@ -2,11 +2,13 @@ import tiles from "@/assets/images/landing-tiles3.png";
 import me from "@/assets/images/me.png";
 import { Button } from "./ui/button";
 import { ArrowDown, PaperclipIcon } from "lucide-react";
+import RotatingText from "./RotatingText";
+
 
 const Profile = () => {
   return (
     <section
-    id="profile"
+      id="profile"
       className="relative"
       style={{
         background:
@@ -18,8 +20,18 @@ const Profile = () => {
         <img src={me} className="-mt-6 md:-mt-24 md:ml-12 w-1/2" />
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-serif font-medium">Deswandy Wong</h1>
-          <h1 className="text-7xl font-serif font-semibold">
-            Fullstack Developer
+          <h1 className="text-7xl font-serif text-start font-semibold">
+            <RotatingText
+              texts={["Fullstack Developer", "DevOps Engineer", "IoT Engineer", "Solution Tinkerer"]}
+              staggerFrom={"last"}
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-2"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={5000}
+            />
           </h1>
           <h2 className="text-3xl">
             Your problem, my recipe. My solution, yours to enjoy.

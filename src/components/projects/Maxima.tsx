@@ -45,7 +45,7 @@ const Maxima = () => {
           </a>
 
           <h2 className="text-2xl font-semibold">
-            2000 freshmen, 50+ activities, 1 system.
+            2000+ freshmen, 50+ activities, 1 system.
           </h2>
 
           <p className="text-lg leading-relaxed">
