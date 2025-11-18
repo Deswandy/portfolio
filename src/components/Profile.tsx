@@ -6,6 +6,7 @@ import { ArrowDown, PaperclipIcon } from "lucide-react";
 const Profile = () => {
   return (
     <section
+    id="profile"
       className="relative"
       style={{
         background:
@@ -30,7 +31,14 @@ const Profile = () => {
             <b> real problems</b> that are fun and impactful.
           </p>
           <div className="flex flex-row gap-2">
-            <Button className="">
+            <Button
+              className=""
+              onClick={() =>
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
               <ArrowDown />
               View Projects
             </Button>

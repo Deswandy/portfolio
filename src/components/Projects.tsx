@@ -7,7 +7,7 @@ import Frugalwatt from "./projects/Frugalwatt";
 
 const Projects = () => {
   return (
-    <section className="w-full bg-[linear-gradient(to_bottom,rgba(241,241,28,0.15),rgba(241,241,28,0.20))]">
+    <section id="projects" className="w-full bg-[linear-gradient(to_bottom,rgba(241,241,28,0.15),rgba(241,241,28,0.20))]">
       <div className="flex flex-row justify-between pt-12">
         <img src={tiles} className="w-[30%] h-full" />
         <div className="flex flex-row gap-4 items-center justify-between">
