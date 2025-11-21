@@ -44,7 +44,7 @@ const Lensz = () => {
             </Button>
           </DialogTrigger>
 
-          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-6 space-y-6">
+          <DialogContent className="w-[90vw] max-h-[90vh] overflow-y-auto p-6 space-y-6">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold">
                 Lensz Project Details
@@ -58,26 +58,21 @@ const Lensz = () => {
             {/* -------- IMAGE GALLERY -------- */}
             <div className="space-y-3">
               <h3 className="font-semibold text-lg">Screenshots</h3>
-              <div className="flex flex-col gap-4">
+              <div className="grid grid-rows-3 md:grid-cols-3 gap-4">
                 <img
                   src={lensz1}
-                  className="rounded-xl shadow-md border object-cover"
+                  className="rounded-xl h-full shadow-md border object-cover"
                   alt="Lensz UI 1"
                 />
                 <img
                   src={lensz2}
-                  className="rounded-xl shadow-md border object-cover"
+                  className="rounded-xl h-full shadow-md border object-cover"
                   alt="Lensz UI 2"
                 />
                 <img
                   src={lensz3}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 3"
-                />
-                <img
-                  src={prototype}
-                  className="rounded-xl shadow-md border object-cover"
-                  alt="Lensz UI 4"
                 />
               </div>
             </div>
@@ -123,6 +118,17 @@ const Lensz = () => {
               <img
                 src={diagram}
                 className="rounded-xl shadow-md border mt-4"
+                alt="Lensz system flow"
+              />
+            </div>
+
+            <Separator className="my-0" />
+            
+            <div className=" ">
+              <h3 className="font-semibold text-lg">Device Prototype</h3>
+              <img
+                src={prototype}
+                className="rounded-xl w-full object-contain shadow-md border mt-4"
                 alt="Lensz system flow"
               />
             </div>

@@ -69,7 +69,7 @@ const Maxima = () => {
               </Button>
             </DialogTrigger>
 
-            <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto p-6 space-y-6">
+            <DialogContent className="w-[90vw] max-h-[90vh]  max-w-none overflow-y-auto p-6 space-y-6">
               <DialogHeader>
                 <DialogTitle className="text-3xl font-bold">
                   MAXIMA 2025 – System Overview
@@ -103,7 +103,7 @@ const Maxima = () => {
               <div className="space-y-3">
                 <h3 className="font-semibold text-lg">Event & System Screens</h3>
                 
-                <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[maxima1, maxima2, maxima3, maxima4].map((src, i) => (
                     <img
                       key={i}

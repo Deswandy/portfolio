@@ -42,7 +42,7 @@ const Frugalwatt = () => {
             </Button>
           </DialogTrigger>
 
-          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-6 space-y-6">
+          <DialogContent className="w-[90vw] max-h-[90vh] overflow-y-auto p-6 space-y-6">
             <DialogHeader>
               <DialogTitle className="text-2xl font-bold">
                 FrugalWatt Project Details
@@ -55,7 +55,7 @@ const Frugalwatt = () => {
             {/* ---- Screenshot Section ---- */}
             <div className="space-y-3">
               <h3 className="font-semibold text-lg">Screenshots</h3>
-              <div className="flex flex-col gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <img
                   src={frugallwatt1}
                   className="rounded-xl shadow-md border object-cover"
