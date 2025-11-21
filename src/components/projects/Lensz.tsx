@@ -65,12 +65,12 @@ const Lensz = () => {
                   alt="Lensz UI 1"
                 />
                 <img
-                  src={lensz1}
+                  src={lensz2}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 2"
                 />
                 <img
-                  src={lensz1}
+                  src={lensz3}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 3"
                 />
