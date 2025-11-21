@@ -9,6 +9,9 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Separator } from "../ui/separator";
+import frugallwatt1 from "@/assets/images/frugalwatt-1.png"
+import frugallwatt2 from "@/assets/images/frugalwatt-2.png"
+import frugallwatt3 from "@/assets/images/frugalwatt-3.png"
 
 const Frugalwatt = () => {
   return (
@@ -52,19 +55,19 @@ const Frugalwatt = () => {
             {/* ---- Screenshot Section ---- */}
             <div className="space-y-3">
               <h3 className="font-semibold text-lg">Screenshots</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
                 <img
-                  src="/your-image-1.png"
+                  src={frugallwatt1}
                   className="rounded-xl shadow-md border object-cover"
                   alt="FrugalWatt UI 1"
                 />
                 <img
-                  src="/your-image-2.png"
+                  src={frugallwatt2}
                   className="rounded-xl shadow-md border object-cover"
                   alt="FrugalWatt UI 2"
                 />
                 <img
-                  src="/your-image-3.png"
+                  src={frugallwatt3}
                   className="rounded-xl shadow-md border object-cover"
                   alt="FrugalWatt UI 3"
                 />
@@ -72,16 +75,29 @@ const Frugalwatt = () => {
             </div>
 
             <Separator className="my-0" />
+            {/* ---- Design Process ---- */}
+            <div>
+              <h3 className="font-semibold text-lg">Design Process</h3>
+              <p className="text-sm leading-relaxed mt-2">
+                The design started with identifying the biggest pain point: most
+                users don't know watt usage but understand the cost of
+                electricity. I created a minimal layout that highlights clarity
+                over complexity. Wireframes were drafted quickly due to
+                hackathon time constraints, then turned into a simple, intuitive
+                calculator UI focusing on instant feedback and ease of use.
+              </p>
+            </div>
+            <Separator className="my-0" />
 
             {/* ---- GitHub ---- */}
             <div className="space-y-1">
               <h3 className="font-semibold text-lg">GitHub Repository</h3>
               <a
-                href="https://github.com/YOUR_REPO_HERE"
+                href="https://github.com/Deswandy/Labubuntu"
                 target="_blank"
                 className="text-blue-600 underline"
               >
-                github.com/YOUR_REPO_HERE
+                github.com/Deswandy/Labubuntu
               </a>
             </div>
 
@@ -97,28 +113,6 @@ const Frugalwatt = () => {
                 <li>shadcn/ui</li>
                 <li>Framer Motion</li>
               </ul>
-            </div>
-
-            <Separator className="my-0" />
-
-            {/* ---- Design Process ---- */}
-            <div>
-              <h3 className="font-semibold text-lg">Design Process</h3>
-              <p className="text-sm leading-relaxed mt-2">
-                The design started with identifying the biggest pain point: most
-                users don't know watt usage but understand the cost of
-                electricity. I created a minimal layout that highlights clarity
-                over complexity. Wireframes were drafted quickly due to
-                hackathon time constraints, then turned into a simple, intuitive
-                calculator UI focusing on instant feedback and ease of use.
-              </p>
-
-              {/* Optional design explanation image */}
-              <img
-                src="/your-flow-image.png"
-                className="rounded-xl shadow-md border mt-4"
-                alt="Wireframe or design flow"
-              />
             </div>
           </DialogContent>
         </Dialog>

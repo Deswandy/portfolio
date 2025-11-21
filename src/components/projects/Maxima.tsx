@@ -9,6 +9,10 @@ import {
   DialogDescription
 } from "@/components/ui/dialog";
 import { Separator } from "../ui/separator";
+import maxima1 from "@/assets/images/maxima-1.png"
+import maxima2 from "@/assets/images/maxima-2.png"
+import maxima3 from "@/assets/images/maxima-3.png"
+import maxima4 from "@/assets/images/maxima-4.png"
 
 const Maxima = () => {
   return (
@@ -50,9 +54,8 @@ const Maxima = () => {
 
           <p className="text-lg leading-relaxed">
             Made a ticketing and attendance system for MAXIMA 2025, where
-            freshmen year students have the chance to experience UMN’s student
-            activity units, ranging from arts and culture, sciences, to social
-            responsibilities.
+            freshmen experience UMN’s student activity units across arts,
+            sciences, culture, and social communities.
           </p>
 
           {/* Dialog Start */}
@@ -72,53 +75,47 @@ const Maxima = () => {
                   MAXIMA 2025 – System Overview
                 </DialogTitle>
                 <DialogDescription>
-                  A full breakdown of the ticketing and attendance platform built for UMN’s largest freshman event.
+                  Inside the system powering UMN’s biggest annual freshman event.
                 </DialogDescription>
               </DialogHeader>
+
+              {/* ----- Background Section ----- */}
+              <div className="space-y-2">
+                <h3 className="font-semibold text-lg">Background</h3>
+                <p className="text-sm leading-relaxed">
+                  MAXIMA is UMN’s largest annual freshman event, bringing together over
+                  2000 new students and showcasing 50+ student activity units. To keep
+                  traffic flowing, activities must manage crowds quickly, verify tickets,
+                  and capture attendance accurately.
+                </p>
+
+                <p className="text-sm leading-relaxed">
+                  The old system relied heavily on manual registration and attendance
+                  lists, causing bottlenecks, slow check-ins, and inconsistent tracking.
+                  Our goal was to streamline this process with a reliable, scalable system
+                  that committees could operate with minimal training.
+                </p>
+              </div>
+
+              <Separator />
 
               {/* ----- Screenshots Section ----- */}
               <div className="space-y-3">
                 <h3 className="font-semibold text-lg">Event & System Screens</h3>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <img
-                    src="/maxima-1.png"
-                    className="rounded-xl shadow-md border object-cover"
-                    alt="MAXIMA UI 1"
-                  />
-                  <img
-                    src="/maxima-2.png"
-                    className="rounded-xl shadow-md border object-cover"
-                    alt="MAXIMA UI 2"
-                  />
-                  <img
-                    src="/maxima-3.png"
-                    className="rounded-xl shadow-md border object-cover"
-                    alt="MAXIMA UI 3"
-                  />
-                  <img
-                    src="/maxima-event.png"
-                    className="rounded-xl shadow-md border object-cover"
-                    alt="MAXIMA event photo"
-                  />
+                <div className="flex flex-col gap-4">
+                  {[maxima1, maxima2, maxima3, maxima4].map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      className="rounded-xl shadow-md border object-cover w-full h-48"
+                      alt={`MAXIMA UI ${i + 1}`}
+                    />
+                  ))}
                 </div>
               </div>
 
-              <Separator className="my-0"/>
-
-              {/* ----- GitHub Repo ----- */}
-              {/* <div>
-                <h3 className="font-semibold text-lg">GitHub Repository</h3>
-                <a
-                  href="https://github.com/YOUR_REPO_HERE"
-                  target="_blank"
-                  className="text-blue-600 underline"
-                >
-                  github.com/YOUR_REPO_HERE
-                </a>
-              </div>
-
-              <Separator className="my-0"/> */}
+              <Separator />
 
               {/* ----- Tech Stack ----- */}
               <div>
@@ -131,40 +128,11 @@ const Maxima = () => {
                   <li>Express.js backend</li>
                   <li>MySQL</li>
                   <li>QR-based ticketing module</li>
-                  <li>Admin dashboard with real-time attendee count</li>
+                  <li>Real-time admin dashboard</li>
                   <li>Docker</li>
                 </ul>
               </div>
 
-              <Separator className="my-0"/>
-
-              {/* ----- Design Process / System Explanation ----- */}
-              <div>
-                <h3 className="font-semibold text-lg">System Flow & Design Process</h3>
-                
-                <p className="text-sm leading-relaxed mt-2">
-                  MAXIMA required a system capable of handling thousands of
-                  students across dozens of parallel activities. We built a
-                  registration and ticketing module, complete with unique QR
-                  identifiers for each student. The attendance flow was designed
-                  to be fast and offline-tolerant since venue Wi-Fi can be
-                  unreliable during large events.
-                </p>
-
-                <p className="text-sm leading-relaxed mt-3">
-                  The admin panel displays real-time attendance counts,
-                  activity popularity, and scanning logs to help committees make
-                  quick decisions during event flow. The UI was kept clean and
-                  large-button oriented to help volunteers scan tickets quickly
-                  with little training.
-                </p>
-
-                <img
-                  src="/maxima-flow.png"
-                  className="rounded-xl shadow-md border mt-4"
-                  alt="MAXIMA system flow"
-                />
-              </div>
             </DialogContent>
           </Dialog>
         </div>

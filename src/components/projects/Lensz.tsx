@@ -9,6 +9,11 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Separator } from "../ui/separator";
+import diagram from "@/assets/images/lensz-diagram.jpg"
+import prototype from "@/assets/images/lensz-prototype.jpg"
+import lensz1 from "@/assets/images/lensz-1.png"
+import lensz2 from "@/assets/images/lensz-2.png"
+import lensz3 from "@/assets/images/lensz-3.jpg"
 
 const Lensz = () => {
   return (
@@ -53,28 +58,73 @@ const Lensz = () => {
             {/* -------- IMAGE GALLERY -------- */}
             <div className="space-y-3">
               <h3 className="font-semibold text-lg">Screenshots</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
                 <img
-                  src="/lensz-1.png"
+                  src={lensz1}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 1"
                 />
                 <img
-                  src="/lensz-2.png"
+                  src={lensz1}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 2"
                 />
                 <img
-                  src="/lensz-3.png"
+                  src={lensz1}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 3"
                 />
                 <img
-                  src="/lensz-4.png"
+                  src={prototype}
                   className="rounded-xl shadow-md border object-cover"
                   alt="Lensz UI 4"
                 />
               </div>
+            </div>
+
+            {/* -------- DESIGN PROCESS -------- */}
+            <div>
+              <h3 className="font-semibold text-lg">Background</h3>
+              <p className="text-sm leading-relaxed mt-2">
+                Optik Gembira, located in ITC Mangga Dua, frequently loses track
+                of glasses due to dynamic shelf arrangements, resulting in 1–5
+                missing items per month. Stock recaps also take up to 5 hours
+                and often contain 1–5 item errors per drawer. Our solution is a
+                digital twin of the glasses inventory using RFID tags and a
+                scanner. Each pair of glasses is tagged, and any movement(such
+                as a sale)is automatically recorded. This provides real-time
+                visibility, faster and more accurate stock checks, and reduces
+                losses. The owner saves both time and money by cutting down on
+                misplaced items and manual recounting.
+              </p>
+              
+            </div>
+            <Separator className="my-0" />
+
+            {/* -------- DESIGN PROCESS -------- */}
+            <div>
+              <h3 className="font-semibold text-lg">Design & System Flow</h3>
+              <p className="text-sm leading-relaxed mt-2">
+                Our system will use RFID tags per each eyeglasses to identify
+                each of the glasses uniquely. These tags have a diameter of 7mm,
+                which fits the constraint of the client’s need (lesser diameter
+                than 10mm). There will be a scanner that scans these tags for
+                glasses registration or status change, and the ID will be
+                fetched into the backend server, where business logic and
+                database access (queries and transactions) will run. The
+                frontend will be another interface for the user to interact with
+                the eyeglasses resources, and tracking these glasses will be
+                possible by looking up their current status and the status
+                histories. When the scanner hits a POST request to the backend,
+                the frontend will get notified via websocket in real-time, both
+                in change of status and registration.
+              </p>
+
+              <img
+                src={diagram}
+                className="rounded-xl shadow-md border mt-4"
+                alt="Lensz system flow"
+              />
             </div>
 
             <Separator className="my-0" />
@@ -105,28 +155,6 @@ const Lensz = () => {
                 <li>PostgreSQL</li>
                 <li>RFID Scanner IoT Integration</li>
               </ul>
-            </div>
-
-            <Separator className="my-0" />
-
-            {/* -------- DESIGN PROCESS -------- */}
-            <div>
-              <h3 className="font-semibold text-lg">Design & System Flow</h3>
-              <p className="text-sm leading-relaxed mt-2">
-                Lensz was designed to solve a real inventory loss issue in Optic
-                Gembira. We mapped the entire glasses handling workflow:
-                receiving, tagging, status changes, and stock recap. The UI
-                focuses on speed and clarity because staff need to quickly scan
-                RFID tags and view/update status. The system integrates IoT RFID
-                hardware through a fast API that updates database records in
-                real time.
-              </p>
-
-              <img
-                src="/lensz-flow.png"
-                className="rounded-xl shadow-md border mt-4"
-                alt="Lensz system flow"
-              />
             </div>
           </DialogContent>
         </Dialog>
