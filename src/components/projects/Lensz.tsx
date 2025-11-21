@@ -58,7 +58,7 @@ const Lensz = () => {
             {/* -------- IMAGE GALLERY -------- */}
             <div className="space-y-3">
               <h3 className="font-semibold text-lg">Screenshots</h3>
-              <div className="grid grid-rows-3 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <img
                   src={lensz1}
                   className="rounded-xl h-full shadow-md border object-cover"
@@ -71,7 +71,7 @@ const Lensz = () => {
                 />
                 <img
                   src={lensz3}
-                  className="rounded-xl shadow-md border object-cover"
+                  className="rounded-xl h-full shadow-md border object-cover"
                   alt="Lensz UI 3"
                 />
               </div>
